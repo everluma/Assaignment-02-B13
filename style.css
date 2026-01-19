@@ -172,6 +172,7 @@ html, body {
     line-height: 1.6;
     letter-spacing: 1px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .hero-button {
@@ -224,6 +225,56 @@ html, body {
 }
 
 
+/* About Section  */
+
+.about-section {
+    background: rgba(26, 11, 46, 1);
+    padding: 50px 200px 120px 200px;
+    text-align: center;
+}
+
+.about-paragraph {
+    /* border-bottom: 1px solid rgba(255, 255, 255, 1); */
+}
+
+.about-paragraph h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.about-paragraph p {
+    color: rgb(177, 175, 175);
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about-paragraph hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: gainsboro;
+}
+
+.achivement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achivement h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color:rgba(0, 255, 136, 1);
+    margin-bottom:10px;
+}
+
+.achivement p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+
 
 /* Mobile Responsive  */
 @media screen and (max-width:576px) {
@@ -273,19 +324,51 @@ html, body {
     }
 
     .hero-button {
-        flex-direction: column;
-        gap: 18px;
+        flex-direction: row;
+        gap: 12px;
     }
 
     .btn-one,
     .btn-two {
-        width: 100%;
+        width: auto;
+        padding: 8px 14px;
+        font-size: 14px;
     }
     .hero-content h2 {
         font-size: 36px;
     }
 
     .hero-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* About Section  */
+
+    .about-section {
+        padding:30px 15px ;
+    }
+
+    .about-paragraph h2 {
+        font-size: 36px;
+    }
+
+    .about-paragraph p {
+        font-size: 18px;
+    }
+
+    .achivement {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .achivement h3 {
+        font-size: 36px;
+    }
+
+    .achivement p {
         font-size: 16px;
     }
 }
