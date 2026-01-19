@@ -115,8 +115,7 @@ html, body {
     position: relative;
     width: 260px;
     height: 260px;
-   margin: 0 auto 30px;
-   margin-bottom: 40px;
+   margin: 0 auto 40px;
 }
 
 .circle-image {
@@ -233,9 +232,7 @@ html, body {
     text-align: center;
 }
 
-.about-paragraph {
-    /* border-bottom: 1px solid rgba(255, 255, 255, 1); */
-}
+
 
 .about-paragraph h2 {
     color: rgba(255, 255, 255, 1);
@@ -256,22 +253,94 @@ html, body {
     color: gainsboro;
 }
 
-.achivement {
+.achievement {
     display: flex;
     justify-content: space-between;
 }
 
-.achivement h3 {
+.achievement h3 {
     font-size: 48px;
     font-weight: bold;
     color:rgba(0, 255, 136, 1);
     margin-bottom:10px;
 }
 
-.achivement p {
+.achievement p {
     font-size: 16px;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
+}
+
+
+
+/* Why Choose Section  */
+
+.choose {
+    background: rgba(35, 14, 61, 1);
+    padding: 120px 200px;
+}
+
+.choose h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.choose img {
+    margin-bottom: 16px;
+}
+
+.choose h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color:rgba(255, 255, 255, 1) ;
+    margin-bottom: 16px;
+}
+
+.choose p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card-container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "audio-quality mobile-friendly mobile-friendly"
+    "audio-quality global-community global-community"
+    "exclusive-interviews exclusive-interviews rich-resources";
+    text-align: center;
+}
+
+.card {
+    padding: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Area  */
+.audio-quality {
+    grid-area: audio-quality;
+}
+
+.mobile-friendly {
+    grid-area: mobile-friendly;
+}
+
+.global-community {
+    grid-area: global-community;
+}
+
+.exclusive-interviews {
+    grid-area: exclusive-interviews;
+}
+
+.rich-resources {
+    grid-area: rich-resources;
 }
 
 
@@ -314,6 +383,10 @@ html, body {
     }
 
     /* hero section  */
+
+    .hero-section {
+        padding: 10px;
+    }
     .podcast-circle {
         width: 200px;
         height: 200px;
@@ -357,18 +430,40 @@ html, body {
         font-size: 18px;
     }
 
-    .achivement {
+    .achievement {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
         margin-bottom: 20px;
     }
 
-    .achivement h3 {
+    .achievement h3 {
         font-size: 36px;
     }
 
-    .achivement p {
+    .achievement p {
         font-size: 16px;
     }
+
+    /* Why Choose Section  */
+
+    .card-container {
+    grid-template-areas: 
+    "audio-quality"
+    "mobile-friendly"
+    "global-community"
+    "exclusive-interviews" "rich-resources";
+    gap: 20px;
+    
+}
+
+.choose {
+    padding: 10px;
+    gap: 10px;
+}
+
+.choose h2 {
+    font-size: 32px;
+    margin-top: 25px;
+}
 }
