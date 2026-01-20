@@ -665,6 +665,7 @@ html, body {
 
 .host {
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 /* Footer Section  */
