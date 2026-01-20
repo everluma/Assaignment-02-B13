@@ -686,61 +686,39 @@ html, body {
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
 
-    /* Container*/
+    /* Section padding */
     .header-container,
     .hero-section,
     section {
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
-    /* Navbar */
-    .nav-bar ul {
-        gap: 20px;
-    }
-
-    /* Hero section */
+    /* Hero */
     .hero-section {
-        min-height: 80vh;
+        min-height: 85vh;
     }
 
     .hero-content h1 {
-        font-size: 42px;
+        font-size: 44px;
+        line-height: 1.2;
     }
 
     .hero-content p {
         font-size: 16px;
-        max-width: 600px;
+        margin-bottom: 18px;
     }
 
-    .hero-buttons {
-        gap: 14px;
-    }
-
-    /* About section */
-    .about-stats {
+    /* Featured cards */
+    .featured {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 28px;
     }
 
-    /* Why choose section cards */
-    .why-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    /* Featured */
-    .featured-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    /* Host section */
-    .host-container {
-        gap: 40px;
-    }
-
-    .host-image img {
-        max-width: 340px;
+    .featured iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
     }
 }
+
