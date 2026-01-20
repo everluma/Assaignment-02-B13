@@ -441,11 +441,7 @@ html, body {
 }
 
 
-footer {
-    background-image: url(./assets/footer-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .footer-section {
     display: flex;
@@ -453,6 +449,9 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 120px;
+     background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-logo {
