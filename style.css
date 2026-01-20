@@ -657,6 +657,10 @@ html, body {
     margin-bottom: 30px;
 }
 
+.featured h3 {
+    font-size: 22px;
+}
+
 /* Meet The Host Section  */
 
 .host-paragraph h3 {
