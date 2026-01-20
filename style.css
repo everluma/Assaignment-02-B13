@@ -647,7 +647,11 @@ html, body {
 .footer-section {
     padding: 40px 20px;
 }
-.
+.footer-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
 .ftr-icon p {
     font-size: 16px;
 }
