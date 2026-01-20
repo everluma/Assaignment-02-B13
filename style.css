@@ -421,6 +421,7 @@ html, body {
     border-radius: 48px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .host-paragraph h3 {
